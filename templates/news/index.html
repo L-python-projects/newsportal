@@ -17,7 +17,6 @@
             <th>Title</th>
             <th>About</th>
             <th>Author</th>
-            <th>Published</th>
             <th>Source</th>
             <th>Manage</th>
         </tr>
@@ -29,17 +28,16 @@
                 <td>{{ post.title }}</td>
                 <td>{{ post.about }}</td>
                 <td>{{ post.author }}</td>
-                <td>{{ post.published }}</td>
                 <td>
                     <a href="{{ post.source }}" target="_blank">{{ post.source }}</a>
                 </td>
                 <td>
                     |
-                    <a href="">Details</a>
+                    <a href="/news/details/{{ post.id }}">Details</a>
                     |
-                    <a href="">Edit</a>
+                    <a href="/news/edit/{{ post.id }}">Edit</a>
                     |
-                    <a href="">Delete</a>
+                    <a href="/news/delete/{{ post.id }}">Delete</a>
                     |
                 </td>
             </tr>
