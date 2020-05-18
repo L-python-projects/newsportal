@@ -8,7 +8,7 @@
     <div id="content" class="container">
         <h2>{{ title }}</h2>
         <hr>
-        <form action="/accounts/sign_up" method="post" onsubmit="return false">
+        <form id="form1" action="/accounts/sign_up" method="post" onsubmit="return false">
             {% csrf_token %}
             <p>
                 <label for="login">Логин:</label><br>
